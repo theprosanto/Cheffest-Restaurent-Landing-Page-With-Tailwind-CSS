@@ -1,6 +1,32 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@theme {
+  --font-inter: "inter", sans-serif;
+  --breakpoint-*: initial;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1170px;
+}
+
 
 @utility container {
   margin-inline: auto;
 }
+
+
+@theme {
+  --animate-pulse: pulse 2.5s ease-in-out infinite;
+  @keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7),  0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255,109,74,0.0),  0 0 0 30px rgba(255,109,74,0);
+    }
+    
+}
+}
+
